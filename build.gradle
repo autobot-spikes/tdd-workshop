@@ -1,0 +1,39 @@
+buildscript {
+    ext.kotlin_version = "1.3.72"
+    ext.kotest_version = "4.0.5"
+    ext.mockk_version = "1.10.0"
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+plugins {
+    id "org.jetbrains.kotlin.jvm" version "1.3.72"
+}
+
+group = "com.ka.workshop.tdd"
+version = "0.0.1-SNAPSHOT"
+java.sourceCompatibility = JavaVersion.VERSION_11
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version")
+
+    testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotest_version")
+    testImplementation("io.kotest:kotest-assertions-core-jvm:$kotest_version")
+    testImplementation("io.kotest:kotest-property-jvm:$kotest_version")
+    testImplementation("io.mockk:mockk:$mockk_version")
+}
+
+test {
+    useJUnitPlatform()
+}
