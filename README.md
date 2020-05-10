@@ -16,4 +16,5 @@
 
 - [Matchers](https://github.com/kotest/kotest/blob/master/doc/matchers.md)
 - [Data-driven testing](https://github.com/kotest/kotest/blob/master/doc/data_driven_testing.md)
+- [Mocking](https://github.com/kotest/kotest/blob/master/doc/mocks.md)
 - [Specification styles](https://github.com/kotest/kotest/blob/master/doc/styles.md)
