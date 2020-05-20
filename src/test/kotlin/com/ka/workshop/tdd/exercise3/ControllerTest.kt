@@ -7,7 +7,7 @@ import io.kotest.matchers.shouldBe
 
 
 class ControllerTest : FreeSpec({
-    "should move forwart when receive 'M'" {
+    "should move forward when receive 'M'" {
         val rover = Rover(0, 0, Direction.NORTH)
         val controller = Controller(rover)
 
