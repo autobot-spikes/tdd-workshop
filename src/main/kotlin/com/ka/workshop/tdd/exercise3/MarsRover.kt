@@ -26,6 +26,8 @@ class MarsRover(val command: String, val instruction: String,  var x: Int, var y
         direction = when (positions[2]){
             "N" -> Direction.North
             "E" -> Direction.East
+            "S" -> Direction.South
+            "W" -> Direction.West
             else -> direction
         }
     }

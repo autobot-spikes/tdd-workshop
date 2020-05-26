@@ -47,6 +47,9 @@ class MarsRoverTest : FreeSpec ({
     "When marsRover move" - {
     forAll(
             row("0 0 N","M", 0,1,Direction.North),
+            row("0 1 S","M", 0,0,Direction.South),
+            row("0 0 E","M", 1,0,Direction.East),
+            row("1 0 W","M", 0,0,Direction.West),
             row("0 0 N","MRM", 1,1,Direction.East),
             row("1 2 N","LMLMLMLMM", 1,3,Direction.North),
             row("3 3 E","MMRMMRMRRM", 5,1,Direction.East)
